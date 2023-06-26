@@ -14,7 +14,7 @@
 </head>
 <body>
     <!--Header-->
-    <header class="header">
+<header class="header">
            <div class="head-nav container">
             <nav class="header-nav">
                 <a class="logo link" href="./index.html">Web<span class="logo-primary">Studio</span></a>
@@ -30,8 +30,58 @@
             <li><a class="contact link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             
         </ul>
+        <button class="open-mb-bt" data-menu-open type="button"> <svg class="mb_icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-icon-menu"/>
+          </svg></button>
     </address>
 </div>
+<div class="mob-menu"data-menu>
+    <div>
+    <button class="close-menu-bt" data-menu-close type="button"><svg class="button_icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-close-black-18dp-2-1"/>
+      </svg>
+    </button>
+      <ul class="mb-list list">
+        <li class="mob-menu-item"><a class="mb-links link" href="./index.html">Studio</a></li>
+        <li class="mob-menu-item"><a class="mb-links link" href="./portfolio.html">Portfolio</a></li>
+        <li class="mob-menu-item"><a class="mb-links link" href="">Contacts</a></li>
+    </ul>
+
+</div>
+<div>
+<address class="mb-contact list">
+<ul class="contact-mb list">
+<li class="contact-mb-tel"><a class="mb-menu-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+<li class="contact-mb-mailto"><a class="mb-menu-mailto link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+</ul>
+<div class="mb-socialmedia">
+        <ul class="mb-socialmedia-icon list" >
+            <li class="team-block-items"><a class="socialmedia-block-media link" href="#"><svg class="team-block-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use> 
+               </svg>
+            </a>
+        </li>
+                <li class="team-block-items"><a class="socialmedia-block-media link" href="#"><svg class="team-block-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Group"></use>
+                   </svg>
+                </a>
+            </li>
+                <li class="team-block-items"><a class="socialmedia-block-media link" href="#"><svg class="team-block-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                   </svg>
+                </a>
+            </li >
+                <li class="team-block-items"><a class="socialmedia-block-media link" href="#"><svg class="team-block-svg" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                   </svg>
+                </a>
+            </li>
+        </ul>  
+          
+</div>
+</div>
+
+
 </header>
  <!--Section 1-->
 <main>  
@@ -43,7 +93,7 @@
     </section> 
 
      <!--Section 2-->
-    <section class="section-second">
+<section class="section-second">
         <div class="container">
             <h2 class="visually-hidden">Our preference</h2>
             <ul class="main-section-goal list">
@@ -87,7 +137,7 @@
 </div>
 </section>
    <!--Section 3-->
-<section class="images">
+<section class="images desktop-visible">
     <div class="container">
             <h2 class="images-title">What are we doing</h2>
             <ul class="images-gadget list">
@@ -237,7 +287,7 @@
 </div>
     </section>
       <!--Section 5-->
-    <section class="customers">
+<section class="customers">
         <div class="container">
         <h2 class="customers-title">Customers</h2>
         <ul class="customers-item list">
@@ -289,7 +339,8 @@
     </section>
 </main>
   <!--Footer-->
-        <footer class="footer">
+
+<footer class="footer">
             <div class="footer-container container">
                 <div class="footer-parag-logo">
                 <a class="logo link logo-footer" href="./index.html">Web<span class="logo-primary-foter">Studio</span></a>            
@@ -319,7 +370,7 @@
                     </a>
                 </li>
             </ul>    
-    </div>
+</div>
     <div class="subscribe-class">
         <p class="subscribe">Subscribe</p>
         <form class="form-subscribe">
@@ -338,7 +389,7 @@
     </div>
 </footer>
   <!--Modal-->
-<div class="backdrop is-hidden" data-modal>
+ <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
             <svg class="button_icon" width="8" height="8">
@@ -390,6 +441,7 @@
 </div>
 
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
     </body>
 </html>
 
