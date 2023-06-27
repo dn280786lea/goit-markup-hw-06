@@ -260,7 +260,7 @@ color:  #2E2F42;
     line-height: 40px;
     letter-spacing: 0.72px;
     text-transform: capitalize; 
-    color:#434455;
+    color: #434455; 
 
   }
  
@@ -297,7 +297,8 @@ padding-top: 40px;
 
   /* --Section 2--*/
    .section-second{
-    padding-bottom: 96px; }
+    padding-bottom: 96px; 
+    padding-top: 96px;}
 
 
   .visually-hidden { position: absolute; 
@@ -404,21 +405,21 @@ padding-top: 40px;
 }
 .main-section-goal {
       display: flex;
-      gap: 24px;
+      gap: 72px 24px;
       flex-wrap: wrap;
 
 }
 .main-section-list{
-  width:100%;
-  padding-left: 0;
+  max-width: 396px;
   
 }
 .main-section-heading{
-      font-family: 'Roboto',sans-serif;
-      font-weight: 500;
-      font-size: 20px;
-      line-height: 24px;
-      letter-spacing: 0.02em;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2E2F42;
       color: var(--color-backa); 
       padding-bottom: 8px; 
       display: flex;
@@ -644,7 +645,7 @@ width: 168px;
 .logo-footer{
   display: inline-block;
   margin-bottom: 16px; 
-  align-items:center;
+
 }
 
 .footer-paraf{
@@ -655,7 +656,7 @@ width: 168px;
     letter-spacing: 0.02em;
     color: #F4F4FD;
     max-width: 264px;
-    margin-right: 120px;
+ 
 }
 .logo-primary-foter{
 font-family: 'Raleway';
@@ -1169,14 +1170,7 @@ text-decoration: underline;
 /* Mobile*/
 @media screen and (min-width: 427px){
 
-  .main-section-heading{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 40px;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: #2E2F42;
-  }
+
   .main-section-list{
     margin-top: 72px;
   }
@@ -1224,13 +1218,14 @@ text-decoration: underline;
     height:88px;
     width:168px;
     transition: color 250ms;
-    margin: 0;
+    margin: 0 ;
   }
   .customers-item{
     display: flex;
     gap: 72px 24px;  
     flex-wrap: wrap;
     justify-content: center;
+    
   }
   .images{
     padding-bottom: 120px;
@@ -1292,6 +1287,12 @@ text-decoration: underline;
     justify-content: flex-start;
     flex-wrap: wrap;
 }
+.footer-parag-logo:first-child{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .form-subscribe {
   display: flex;
   gap: 24px;
@@ -1379,14 +1380,7 @@ gap: 40px;
 color: #404bbf;
 transition: color 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.open-mb-bt{
-  display: none;
-}
-.modal{
 
-  min-height:584px ;
-  width:408px ;
 }
 .contact-list{
   display: flex;
@@ -1394,7 +1388,14 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   gap: 12px 40px;
 font-style: normal
 }
+.open-mb-bt{
+  display: none;
+}
+.modal{
 
+  min-height:584px ;
+  
+}
 }
 
 
