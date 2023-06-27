@@ -610,7 +610,7 @@ width: 100%;
 
 .customers-item{
   display: flex;
-  gap: 24px;  
+  gap: 72px 16px;  
   flex-wrap: wrap;
 }
 .customers-pict{
@@ -1220,6 +1220,11 @@ text-decoration: underline;
     height:88px;
     width:  calc((100% - 120px) / 3);
     transition: color 250ms;
+  }
+  .customers-item{
+    display: flex;
+    gap: 72px 16px;  
+    flex-wrap: wrap;
   }
   .images{
     padding-bottom: 120px;
