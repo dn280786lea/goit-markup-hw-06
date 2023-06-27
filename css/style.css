@@ -1288,8 +1288,14 @@ text-decoration: underline;
   gap: 24px;
   padding-top: 16px;
   align-items: center;
+  flex-direction: row;
 
 }
+.subscribe{
+  align-items: flex-start;
+}
+
+
 .address{
   display: flex;
   justify-content: space-between;
