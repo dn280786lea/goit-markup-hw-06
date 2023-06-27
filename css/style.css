@@ -1489,12 +1489,11 @@ margin-bottom: 72px;}
 
 
 .footer{
-  padding: 96px 0;
 }
 
 .footer-container {
   display: flex;
-    justify-content: flex-start;
+  justify-content: baseline;
     margin-left: 108px;
     flex-wrap: wrap;
 }
