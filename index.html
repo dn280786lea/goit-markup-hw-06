@@ -44,7 +44,7 @@
       </svg>
     </button>
       <ul class="mb-list list">
-        <li class="mob-menu-item"><a class="mb-links link" href="./index.html">Studio</a></li>
+        <li class="mob-menu-item"><a class="mb-links link current-burger" href="./index.html">Studio</a></li>
         <li class="mob-menu-item"><a class="mb-links link" href="./portfolio.html">Portfolio</a></li>
         <li class="mob-menu-item"><a class="mb-links link" href="">Contacts</a></li>
     </ul>
@@ -52,7 +52,7 @@
 <div>
 <address class="mb-contact list">
 <ul class="contact-mb list">
-<li class="contact-mb-tel"><a class="mb-menu-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+<li class="contact-mb-tel"><a class="mb-menu-tel link curent-burger" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
 <li class="contact-mb-mailto"><a class="mb-menu-mailto link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
 </ul>
 <div class="mb-socialmedia">
@@ -143,17 +143,28 @@
             <h2 class="images-title">What are we doing</h2>
             <ul class="images-gadget list">
         <li class="images-gadget-list">
-            <img src="./images/Rectangle71_(1).jpg" 
+            <img 
+            srcset="
+            ./images/Rectangle71_(1).jpg 1x,
+            ./images/Rectangle71(3)2x.jpg 2x"  
+            src="./images/Rectangle71_(1).jpg" 
             alt="laptop" 
             width="360">
         </li>
         <li class="images-gadget-list">
-            <img src="./images/Rectangle-72.jpg" 
+            <img 
+            srcset="
+            ./images/Rectangle-72.jpg 1x,
+            ./images/Rectangle71(4)2x.jpg 2x" 
+            src="./images/Rectangle-72.jpg" 
             alt="fotoscreen"
             width="360">
         </li>
         <li class="images-gadget-list">
-            <img src="./images/Rectangle_71(2).jpg" 
+            <img 
+            srcset="
+            ./images/Rectangle_71(2).jpg 1x,
+            ./images/Rectangle71(5)2x.jpg 2x" src="./images/Rectangle_71(2).jpg" 
             alt="telephoneonhand"
             width="360">
         </li>
@@ -167,7 +178,11 @@
          <h2 class="our-team">Our Team</h2>
     <ul class="team-information list">
         <li class="team-info-link">
-        <img class="team-img" src="./images/img.jpg" 
+        <img class="team-img"   
+        srcset="
+        ./images/img.jpg  1x,
+        ./images/img(4)-2x.jpg 2x"      
+        src="./images/img.jpg" 
             alt="Mark Guerrero" width="264">
          <div class="employee">  
                 <h3 class="team-head">Mark Guerrero</h3>
@@ -196,7 +211,11 @@
         </div>
         </li>
         <li class="team-info-link">
-            <img class="team-img" src="./images/img(1).jpg" 
+            <img class="team-img" 
+            srcset="
+            ./images/img(1).jpg 1x,
+            ./images/img(5)-2x.jpg 2x"  
+            src="./images/img(1).jpg" 
             alt="Tom Ford" width="264">
             <div class="employee">
                 <h3 class="team-head">Tom Ford</h3>
@@ -226,7 +245,11 @@
     </div> 
         </li>
         <li class="team-info-link">
-            <img class="team-img" src="./images/img(2).jpg" alt="Camila 
+            <img class="team-img" 
+            srcset="
+            ./images/img(2).jpg 1x,
+            ./images/img(6)-2x.jpg 2x" 
+            src="./images/img(2).jpg" alt="Camila 
             Garcia" width="264">
             <div class="employee">
                 <h3 class="team-head">Camila Garcia</h3>
@@ -256,7 +279,11 @@
     </div> 
         </li>
         <li class="team-info-link">
-            <img class="team-img" src="./images/img(3).jpg" 
+            <img class="team-img" 
+            srcset="
+            ./images/img(3).jpg 1x,
+            ./images/img(7)-2x.jpg 2x" 
+            src="./images/img(3).jpg" 
             alt="Daniel Wilson" width="264">
             <div class="employee">
                 <h3 class="team-head">Daniel Wilson</h3>
