@@ -310,7 +310,9 @@ letter-spacing: 0.4px;
 
   /* --Section 2--*/
    .section-second{
-    padding-bottom: 96px; 
+    padding: 96px 0; 
+    
+
   }
 
 
@@ -1185,9 +1187,6 @@ text-decoration: underline;
 @media screen and (min-width: 427px){
 
 
-  .main-section-list{
-    margin-top: 72px;
-  }
 }
 /*Tablet*/
 
