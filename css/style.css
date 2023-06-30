@@ -667,8 +667,7 @@ padding: 16px 32px;
 }
 .subscribe-class {
   margin-bottom: auto;
-  width: 453px;
-  height: 80px;
+
 
 }
 
@@ -1332,9 +1331,6 @@ font-family: Roboto;
 }
 .subscribe {
   text-align: start; 
-}
-.subscribe-class{
-width: 453px;
 }
 
 .socialmedia-title{
