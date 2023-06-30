@@ -186,7 +186,8 @@ justify-content: space-between;
 overflow-y: auto;
 transform: translateY(100%);
 transform: translateX(0%);
-transition: background-color 250ms;
+transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
   }
   .close-menu-bt{
     display: block;
@@ -244,7 +245,6 @@ color:  #2E2F42;
     top: 24px;
     width: 24px;
     height: 24px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background-color: transparent;
     color: var(--background-color-hero-footer);
@@ -261,7 +261,7 @@ color:  #2E2F42;
   }
   .mb-menu-tel{
     font-size: 36px;
-    font-family: Roboto;
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
     line-height: 40px;
     letter-spacing: 0.72px;
@@ -283,7 +283,7 @@ color: #4D5AE5;
 .mb-menu-mailto {
   color:#434455;
 font-size: 20px;
-font-family: Roboto;
+font-family: "Roboto", sans-serif;
 font-weight: 500;
 line-height: 24px;
 letter-spacing: 0.4px; 
@@ -346,18 +346,20 @@ letter-spacing: 0.4px;
    
    
   }
-  @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.main-section {
-  background-image: linear-gradient(
-      180deg,
-      rgba(17, 17, 17, 0) 0%,
-      rgba(17, 17, 17, 0.4) 100%
-    ),
-    url(../images/Dark-bg-mb.png);
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg-mb.png);
+  }
 }
-}
+
   .main-fon-icon{
     display: flex;
     align-items: center;
@@ -954,7 +956,8 @@ gap:24px;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    max-height: 584px;
+    max-width:408px;
+    width: calc(100%-36px);
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -1010,7 +1013,6 @@ margin-bottom: 16px;
 .form{
   display: flex;
   flex-direction: column;
-  padding: 8px;
   max-width: 360px;
 
 }
@@ -1126,7 +1128,6 @@ margin-bottom: 4px;
   transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   color: #FFFFFF;
   margin-top: 24px;
-  margin-bottom: 24px;
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   
@@ -1151,14 +1152,13 @@ cursor: pointer;
 align-items:center;
 }
 .agree-form {
-font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-letter-spacing: 0.04em;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0.48px;
 text-decoration-line: underline;
-color: #4D5AE5;
 padding-left: 8px;
-text-decoration: underline;
+color: #8e8f99;
 }
 .checkbox-span {
   display: inline-flex;
@@ -1169,6 +1169,8 @@ text-decoration: underline;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4); 
   border-radius: 2px;
+  margin-right: 8px;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   .checkbox:checked + .agree-form span{
@@ -1179,6 +1181,10 @@ text-decoration: underline;
 
 .checkbox-link{
   text-decoration: underline;
+display: inline-block;
+margin-left: 3px;
+color:#4d5ae5;
+font-family: Roboto;
 }
 
 
@@ -1261,14 +1267,15 @@ text-decoration: underline;
     
   }
 
-  @media (min-device-pixel-ratio: 2),
+
+@media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .main-section {
     background-image: linear-gradient(
-        180deg,
-        rgba(17, 17, 17, 0) 0%,
-        rgba(17, 17, 17, 0.4) 100%
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
       ),
       url(../images/Dark-tab.png);
   }
@@ -1294,6 +1301,9 @@ text-decoration: underline;
 
 .footer-container {
     flex-wrap: wrap;
+    justify-content: unset;
+    padding-left:108px;
+   
 }
 
 .form-subscribe {
@@ -1478,16 +1488,16 @@ height: 100%;
   
 }
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-.main-section {
-  background-image: linear-gradient(
-      180deg,
-      rgba(17, 17, 17, 0) 0%,
-      rgba(17, 17, 17, 0.4) 100%
-    ),
-    url(../images/people-office-main.png);
-}
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office-main.png);
+  }
 }
 .main-section_text{
   display: block;
